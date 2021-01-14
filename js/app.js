@@ -10,56 +10,61 @@ alert('Hello ' + userName + ' nice to meet you!');
 
 
 //question 1
-var answer1 = prompt('Do you like Beer?');
+var answer1 = prompt('Do I like Beer?');
 var normalizeAnswer1 = answer1.toLowerCase();
 
 if(normalizeAnswer1 === 'yes' || normalizeAnswer1 === 'y'){
-  //console.log('you are correct');
-  alert('So do I! You are going to like this questionaire!');
+  //console.log('like Beer?: ' + answer1);
+  alert('I DO! but i dont drink very often');
 }else if(normalizeAnswer1 === 'no' || normalizeAnswer1 === 'n'){
-  alert('You aren\'t going to like this quiz...');
+  //console.log('like Beer?: ' + answer1);
+  alert('You aren\'t going to do well.');
 }
 
 //question 2
-var answer2 = prompt('Do you like warm Beer?');
+var answer2 = prompt('Do i live in Washington State?');
 var normalizeAnswer2 = answer2.toLowerCase();
 
 if(normalizeAnswer2 === 'yes' || normalizeAnswer2 === 'y'){
-  //console.log('you are correct');
-  alert('Not my bag, but go for it!');
+  //consol.log("Washington?: " + answer2);
+  alert('For now, i cant stand the rain here.');
 }else if(normalizeAnswer2 === 'no' || normalizeAnswer2 === 'n'){
-  alert('I\'ll only have a warm beer if i\'m desperate.');
+  //consol.log("Washington?: " + answer2);
+  alert('I wish you were right... but you\'re not');
 }
 
 //question 3
-var answer3 = prompt('Do you like sour Beer?');
+var answer3 = prompt('Do i have any Children?');
 var normalizeAnswer3 = answer3.toLowerCase();
 
 if(normalizeAnswer3 === 'yes' || normalizeAnswer3 === 'y'){
-  //console.log('you are correct');
-  alert('You are one weird person.');
+  //consol.log("Children?: " + answer3);
+  alert('I have Two of them!');
 }else if(normalizeAnswer3 === 'no' || normalizeAnswer3 === 'n'){
-  alert('Sound\'s like someone made the mistake of trying some!');
+  //consol.log("Children?: " + answer3);
+  alert('I couldn\'t live without them!');
 }
 
 //question 4
-var answer4 = prompt('Do you like cold Beer?');
+var answer4 = prompt('Am i a Man?');
 var normalizeAnswer4 = answer4.toLowerCase();
 
 if(normalizeAnswer4 === 'yes' || normalizeAnswer4 === 'y'){
-  //console.log('you are correct');
-  alert('Who Doesn\'t!');
+  //consol.log("Man: " + answer4);
+  alert('Yes, i am.');
 }else if(normalizeAnswer4 === 'no' || normalizeAnswer4 === 'n'){
-  alert('You aren\'t human.');
+  //consol.log("Man?: " + answer4);
+  alert('Well, i am a Man.');
 }
 
 //question 5
-var answer5 = prompt('Are you ready for more questions about Beer?');
+var answer5 = prompt('Did i serve in the Armed Forces?');
 var normalizeAnswer5 = answer5.toLowerCase();
 
 if(normalizeAnswer5 === 'yes' || normalizeAnswer5 === 'y'){
-  //console.log('you are correct');
-  alert('You\'re weird...');
+  //consol.log("Veteran?: " + answer5);
+  alert('To answer you\'re question ' + userName + ', I served 4 years active duty almost 10 years ago.');
 }else if(normalizeAnswer5 === 'no' || normalizeAnswer5 === 'n'){
-  alert('It\'s ok, I\'ll stop asking.');
+  //consol.log("Veteran?: " + answer5);
+  alert('It\'s ok ' + userName + ', How could you have known that i am a veteran?');
 }
