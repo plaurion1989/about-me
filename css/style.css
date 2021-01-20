@@ -5,8 +5,17 @@ body {
     border: 1px solid black;
     
 }
+@keyframes mymove{
+    10% {letter-spacing: 10px;}
+}
+h1 {
+    font-size: 40px;
+    letter-spacing: 2px;
+    animation: mymove 3s ease-in;
+}
 p {
     padding: 10px;
+    
 }
 ul {
     list-style: circle;
