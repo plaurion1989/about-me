@@ -83,21 +83,57 @@ function questionFive() {
 }
 questionFive();
 
+function questionSix() {
+  //borrowed from book
+  var number = Math.floor((Math.random() * 10) + 1);
 
-var i = 0;
-var number = Math.floor((Math.random() * 10) + 1);
-var answer6 = prompt('I\'m thinking of a number between 1 and 10?').toLowerCase();
-for (i = 0; i < 4; i++)
-  if (answer6 == number) {
-    alert('Wow ' + name + ', you guessed a randomly generated number!');
-    score++;
-  } while (answer6 > number) {
-    alert('Nice try! Too High.');
-    break;
-  } while (answer6 < number) {
-    alert('Nope, Too Low!');
-    break;
+  for (var i = 0; i < 4; i++) {
+    var answer6 = +prompt('I\'m thinking of a number between 1 and 10?');
+    if (answer6 === number) {
+      alert('Wow ' + name + ', you guessed a randomly generated number!');
+      score++;
+      break;
+    } else if (answer6 > number && i !== 3) {
+      alert('Nice try! Too High.');
+    } else if (answer6 < number && i !== 3) {
+      alert('Nope, Too Low!');
+    } else if (i === 3) {
+      alert(`the correct answer is ${number}!!! i dont know it either!`);
+    }
+
   }
+}
+questionSix();
+
+function questionSeven() {
+  var countriesArray = ['spain', 'portugal', 'france', 'italy', 'usa', 'turkey'];
+  var countLoop = 6;
+  var correct = false;
+
+  for (var i = 0; i < countLoop; i++) {
+    var countries = prompt('what countries have i visited? you have 6 tries.');
+
+    for (var j = 0; j < countriesArray.length; j++) {
+      if (countries === countriesArray[j]) {
+        alert('You are correct!');
+        score++;
+        correct = true;
+        break;
+      }
+    }
+    if (correct) {
+      break;
+    } else {
+      alert('Wrong, i have never been there!');
+    }
+  }
+  if (j === countLoop || correct) {
+    alert(`I've visited ${countriesArray}`);
+  }
+}
+questionSeven();
+
+
 
 if (score < 4) {
   alert('You only guessed ' + score + ' out of 7 correct, guess you learned a thing or two about me!');
