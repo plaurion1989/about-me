@@ -18,7 +18,6 @@ alert('Hello, ' + name + ' nice to meet you!');
 function questionOne() {
   var answer1 = prompt('Do I like Beer?');
   var normalizeAnswer1 = answer1.toLowerCase();
-
   if (normalizeAnswer1 === 'yes' || normalizeAnswer1 === 'y') {
     // console.log('like Beer?: ' + answer1);
     alert('I DO! but i dont drink very often');
@@ -30,18 +29,21 @@ function questionOne() {
 }
 questionOne();
 
+function questionTwo() {
+  var answer2 = prompt('Do i live in Washington State?');
+  var normalizeAnswer2 = answer2.toLowerCase();
 
-var answer2 = prompt('Do i live in Washington State?');
-var normalizeAnswer2 = answer2.toLowerCase();
-
-if (normalizeAnswer2 === 'yes' || normalizeAnswer2 === 'y') {
-  // consol.log("Washington?: " + answer2);
-  alert('For now, i cant stand the rain here.');
-  score++;
-} else if (normalizeAnswer2 === 'no' || normalizeAnswer2 === 'n') {
-  // consol.log("Washington?: " + answer2);
-  alert('I wish you were right... but you\'re not');
+  if (normalizeAnswer2 === 'yes' || normalizeAnswer2 === 'y') {
+    // consol.log("Washington?: " + answer2);
+    alert('For now, i cant stand the rain here.');
+    score++;
+  } else if (normalizeAnswer2 === 'no' || normalizeAnswer2 === 'n') {
+    // consol.log("Washington?: " + answer2);
+    alert('I wish you were right... but you\'re not');
+  }
 }
+questionTwo();
+
 
 var answer3 = prompt('Do i have any Children?').toLowerCase();
 
