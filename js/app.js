@@ -40,40 +40,51 @@ if(normalizeAnswer2 === 'yes' || normalizeAnswer2 === 'y'){
   alert('I wish you were right... but you\'re not');
 }
 
-var answer3 = prompt('Do i have any Children?');
-var normalizeAnswer3 = answer3.toLowerCase();
+var answer3 = prompt('Do i have any Children?').toLowerCase();
 
-if(normalizeAnswer3 === 'yes' || normalizeAnswer3 === 'y'){
+if(answer3 === 'yes' || answer3 === 'y'){
   // consol.log("Children?: " + answer3);
   alert('I have Two of them!');
   score++;
-}else if(normalizeAnswer3 === 'no' || normalizeAnswer3 === 'n'){
+}else if(answer3 === 'no' || answer3 === 'n'){
   // consol.log("Children?: " + answer3);
   alert('I couldn\'t live without them!');
 }
 
-var answer4 = prompt('Am i a Man?');
-var normalizeAnswer4 = answer4.toLowerCase();
+var answer4 = prompt('Am i a Man?').toLowerCase();
 
-if(normalizeAnswer4 === 'yes' || normalizeAnswer4 === 'y'){
+if(answer4 === 'yes' || answer4 === 'y'){
   // consol.log("Man: " + answer4);
   alert('Yes, i am.');
   score++;
-}else if(normalizeAnswer4 === 'no' || normalizeAnswer4 === 'n'){
+}else if(answer4 === 'no' || answer4 === 'n'){
   // consol.log("Man?: " + answer4 );
   alert('Well, i am a Man.');
 }
 
-var answer5 = prompt('Did i serve in the Armed Forces?');
-var normalizeAnswer5 = answer5.toLowerCase();
+var answer5 = prompt('Did i serve in the Armed Forces?').toLowerCase();
 
-if(normalizeAnswer5 === 'yes' || normalizeAnswer5 === 'y'){
+if(answer5 === 'yes' || answer5 === 'y'){
   // consol.log("Veteran?: " + answer5);
   alert('To answer you\'re question ' + name + ', I served 4 years active duty almost 10 years ago.');
   score++;
-}else if(normalizeAnswer5 === 'no' || normalizeAnswer5 === 'n'){
+}else if(answer5 === 'no' || answer5 === 'n'){
   // consol.log("Veteran?: " + answer5);
   alert('It\'s ok ' + name + ', How could you have known that i am a veteran?');
+}
+var i = 0;
+var number = Math.floor((Math.random() * 10) + 1);
+var answer6 = prompt('I\'m thinking of a number between 1 and 10?').toLowerCase();
+for(i = 0; i < 4; i++)
+if(answer6 == number){
+  alert('Wow ' + name + ', you guessed a randomly generated number!');
+  score++;
+}while(answer6 > number){
+  alert('Nice try! Too High.');
+  break;
+}while(answer6 < number){
+  alert('Nope, Too Low!');
+  break;
 }
 
 if(score < 4){
