@@ -70,16 +70,24 @@ function questionFour() {
 }
 questionFour();
 
-var answer5 = prompt('Did i serve in the Armed Forces?').toLowerCase();
-
-if (answer5 === 'yes' || answer5 === 'y') {
-  // consol.log("Veteran?: " + answer5);
-  alert('To answer you\'re question ' + name + ', I served 4 years active duty almost 10 years ago.');
-  score++;
-} else if (answer5 === 'no' || answer5 === 'n') {
-  // consol.log("Veteran?: " + answer5);
-  alert('It\'s ok ' + name + ', How could you have known that i am a veteran?');
+function questionFive() {
+  var answer5 = prompt('Did i serve in the Armed Forces?').toLowerCase();
+  if (answer5 === 'yes' || answer5 === 'y') {
+    // consol.log("Veteran?: " + answer5);
+    alert('To answer you\'re question ' + name + ', I served 4 years active duty almost 10 years ago.');
+    score++;
+  } else if (answer5 === 'no' || answer5 === 'n') {
+    // consol.log("Veteran?: " + answer5);
+    alert('It\'s ok ' + name + ', How could you have known that i am a veteran?');
+  }
 }
+questionFive();
+
+
+
+
+
+
 var i = 0;
 var number = Math.floor((Math.random() * 10) + 1);
 var answer6 = prompt('I\'m thinking of a number between 1 and 10?').toLowerCase();
