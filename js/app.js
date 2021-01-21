@@ -107,7 +107,7 @@ questionSix();
 
 function questionSeven() {
   var countriesArray = ['spain', 'portugal', 'france', 'italy', 'usa', 'turkey'];
-  var countLoop = 6;
+  var countLoop = 7;
   var correct = false;
 
   for (var i = 0; i < countLoop; i++) {
