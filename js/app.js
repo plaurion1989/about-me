@@ -1,19 +1,19 @@
 'use strict';
-var score = 0
-var name = prompt('Hi, What is your name?');
-var normalName = name.toLowerCase();
-while (!name) {
-  name = prompt('Please tell me, I need it to pass my class...');
+
+var score = 0;
+var userName = prompt('Hi, What is your name?').toLowerCase();
+while (!userName) {
+  userName = prompt('Please tell me, I need it to pass my class...');
 }
 
-if (normalName !== 'patrick') {
+if (userName !== 'patrick') {
   alert('Glad we dont have the same name!  That would get cornfusing..');
 
-} else if (normalName == 'patrick') {
+} else if (userName === 'patrick') {
   alert('Gosh darn it, we have the same name!');
 }
 
-alert('Hello, ' + name + ' nice to meet you!');
+alert('Hello, ' + userName + ' nice to meet you!');
 
 function questionOne() {
   var answer1 = prompt('Do I like Beer?');
@@ -82,10 +82,6 @@ function questionFive() {
   }
 }
 questionFive();
-
-
-
-
 
 
 var i = 0;
