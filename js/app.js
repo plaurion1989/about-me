@@ -44,17 +44,18 @@ function questionTwo() {
 }
 questionTwo();
 
-
-var answer3 = prompt('Do i have any Children?').toLowerCase();
-
-if (answer3 === 'yes' || answer3 === 'y') {
-  // consol.log("Children?: " + answer3);
-  alert('I have Two of them!');
-  score++;
-} else if (answer3 === 'no' || answer3 === 'n') {
-  // consol.log("Children?: " + answer3);
-  alert('I couldn\'t live without them!');
+function questionThree() {
+  var answer3 = prompt('Do i have any Children?').toLowerCase();
+  if (answer3 === 'yes' || answer3 === 'y') {
+    // consol.log("Children?: " + answer3);
+    alert('I have Two of them!');
+    score++;
+  } else if (answer3 === 'no' || answer3 === 'n') {
+    // consol.log("Children?: " + answer3);
+    alert('I couldn\'t live without them!');
+  }
 }
+questionThree();
 
 var answer4 = prompt('Am i a Man?').toLowerCase();
 
