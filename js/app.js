@@ -15,7 +15,6 @@ if (normalName !== 'patrick') {
 
 alert('Hello, ' + name +  ' nice to meet you!');
 
-
 var answer1 = prompt('Do I like Beer?');
 var normalizeAnswer1 = answer1.toLowerCase();
 
@@ -72,19 +71,19 @@ if(answer5 === 'yes' || answer5 === 'y'){
   // consol.log("Veteran?: " + answer5);
   alert('It\'s ok ' + name + ', How could you have known that i am a veteran?');
 }
-var i = 0;
+
+
 var number = Math.floor((Math.random() * 10) + 1);
-var answer6 = prompt('I\'m thinking of a number between 1 and 10?').toLowerCase();
-for(i = 0; i < 4; i++)
-if(answer6 == number){
+//write for loop here from line 79 to 88
+var answer6 = +prompt('I\'m thinking of a number between 1 and 10?').toLowerCase();
+
+if(answer6 === number){
   alert('Wow ' + name + ', you guessed a randomly generated number!');
   score++;
-}while(answer6 > number){
+}else if(answer6 > number){
   alert('Nice try! Too High.');
-  break;
-}while(answer6 < number){
+}else(answer6 < number){
   alert('Nope, Too Low!');
-  break;
 }
 
 if(score < 4){
