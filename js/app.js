@@ -111,7 +111,7 @@ function questionSeven() {
   var correct = false;
 
   for (var i = 0; i < countLoop; i++) {
-    var countries = prompt('what countries have i visited? you have 6 tries.');
+    var countries = prompt(`what countries have i visited? you have ${countLoop -i} tries.`);
 
     for (var j = 0; j < countriesArray.length; j++) {
       if (countries === countriesArray[j]) {
