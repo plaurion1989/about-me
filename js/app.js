@@ -57,16 +57,18 @@ function questionThree() {
 }
 questionThree();
 
-var answer4 = prompt('Am i a Man?').toLowerCase();
-
-if (answer4 === 'yes' || answer4 === 'y') {
-  // consol.log("Man: " + answer4);
-  alert('Yes, i am.');
-  score++;
-} else if (answer4 === 'no' || answer4 === 'n') {
-  // consol.log("Man?: " + answer4 );
-  alert('Well, i am a Man.');
+function questionFour() {
+  var answer4 = prompt('Am i a Man?').toLowerCase();
+  if (answer4 === 'yes' || answer4 === 'y') {
+    // consol.log("Man: " + answer4);
+    alert('Yes, i am.');
+    score++;
+  } else if (answer4 === 'no' || answer4 === 'n') {
+    // consol.log("Man?: " + answer4 );
+    alert('Well, i am a Man.');
+  }
 }
+questionFour();
 
 var answer5 = prompt('Did i serve in the Armed Forces?').toLowerCase();
 
